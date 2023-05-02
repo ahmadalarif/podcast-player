@@ -1,0 +1,34 @@
+
+
+
+
+
+<div class="row align-items-md-stretch  bi-border-center mx-auto align-content-center card text-center">
+  <div class="col-md-9">
+    <div class="h-100 p-5 text-bg-dark rounded-3">
+      <h1 class="card-title">Editing episode</h1>
+       <h4><%= render "form", episode: @episode %></h4>
+
+<br>
+<p>Edit podcast:  you can edit your podcast, by clicking choose file and update episode and your are ready.</p>
+
+      <div>
+        <button class="btn btn-outline-info" type="button"><%= link_to "Show this episode", @episode, class:"a-light" %></button>
+        <button class="btn btn-outline-secondary" type="button"><%= link_to "Back to episodes", episodes_path, class:"a-light" 
+ %></button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .a-light{
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
+</style>

@@ -1,0 +1,31 @@
+<p style="color: red"><%= notice %></p>
+<div class="row align-items-md-stretch col-md-19 bi-border-center mx-auto align-content-center card text-center">
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-bg-dark rounded-3">
+      <h1>Episodes</h1>
+      <div>
+       <div id="episodes">
+        <% @episodes.each do |episode| %>
+        <%= render episode %>
+       
+       <button class="btn btn-outline-light btn-outline-primary" type="button"><%= link_to "Show this episode", episode, class:"a-light" %>    </button> 
+      <button class="btn btn-outline-light" type="button"><%= link_to "Back to homepage", root_path, class:"a-light" %></button> 
+
+    </div>
+    
+  <% end %>
+  </div>
+ </div>
+</div>
+
+<style>
+.a-light{
+background-color: #0d6efd;
+color: white;
+padding: 10px 60px;
+text-align: center; 
+text-decoration: none;
+display: inline-block;
+}
+
+</style>
